@@ -6,8 +6,8 @@ A lightweight, powerful console-based text editor with a built-in **Git-like ver
 
 ## 📸 Screenshots
 
-| **Inline Editor Interface** | **Main Menu & Version History** |
-|:---:|:---:|
+|                  **Inline Editor Interface**                   |                 **Main Menu & Version History**                  |
+| :------------------------------------------------------------: | :--------------------------------------------------------------: |
 | <img src="inline-editor.png" alt="Inline Editor" width="450"/> | <img src="menu+history.png" alt="Menu and History" width="450"/> |
 
 ---
@@ -29,18 +29,20 @@ A lightweight, powerful console-based text editor with a built-in **Git-like ver
 ## 🎮 Controls & Shortcuts
 
 ### **In the Editor**
-| Shortcut | Action |
-| :--- | :--- |
-| `Ctrl + Y` | **Save to Memory** (Updates the working buffer) |
-| `Ctrl + D` | **Commit** (Finalize changes with a message) |
-| `Ctrl + Z` | **Undo** (Revert last edit) |
-| `Ctrl + R` | **Redo** (Reapply last undone edit) |
-| `Ctrl + E` | **Exit Editor** (Return to Main Menu) |
-| `Arrows` | Move cursor Up/Down/Left/Right |
-| `Home / End` | Jump to start or end of text |
-| `Backspace / Del` | Delete characters |
+
+| Shortcut          | Action                                          |
+| :---------------- | :---------------------------------------------- |
+| `Ctrl + Y`        | **Save to Memory** (Updates the working buffer) |
+| `Ctrl + D`        | **Commit** (Finalize changes with a message)    |
+| `Ctrl + Z`        | **Undo** (Revert last edit)                     |
+| `Ctrl + R`        | **Redo** (Reapply last undone edit)             |
+| `Ctrl + E`        | **Exit Editor** (Return to Main Menu)           |
+| `Arrows`          | Move cursor Up/Down/Left/Right                  |
+| `Home / End`      | Jump to start or end of text                    |
+| `Backspace / Del` | Delete characters                               |
 
 ### **Main Menu**
+
 - `[1]` **Edit**: Open the inline editor.
 - `[2]` **Commit**: Commit current unsaved changes.
 - `[3]` **Revert**: Go back to a specific version number.
@@ -61,25 +63,28 @@ A lightweight, powerful console-based text editor with a built-in **Git-like ver
 ## 🚀 Getting Started
 
 ### **Prerequisites**
+
 - **Windows OS** (Required for `windows.h` and `conio.h` support).
 - **G++ Compiler** (MinGW recommended).
 
 ### **Installation**
 
 1. **Clone the repository**:
+
    ```powershell
    git clone https://github.com/beingshafin/MemoEdit-Version-Tracker.git
    cd MemoEdit-Version-Tracker
    ```
 
 2. **Compile the program**:
+
    ```powershell
-   g++ meom-editor.cpp -o memoedit.exe
+   g++ memo-editor.cpp -o memo-editor.exe
    ```
 
 3. **Run the application**:
    ```powershell
-   ./memoedit.exe
+   ./memo-editor.exe
    ```
 
 ---
@@ -87,6 +92,7 @@ A lightweight, powerful console-based text editor with a built-in **Git-like ver
 ## ⚙️ How It Works
 
 The core of the version tracker is a **Doubly Linked List** where each `VersionNode` stores:
+
 - A unique `versionId`.
 - A descriptive `message`.
 - The full `content` of the document at that point in time.
