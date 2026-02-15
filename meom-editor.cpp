@@ -52,7 +52,6 @@ VersionNode* current = NULL; // current version pointer
 
 int versionCounter = 0; // version counter
 string workingContent = ""; // current default buffer text 
-//bool isSaved = false; // changes saved but not commited
 
 
 //------------------------------------------------
@@ -98,7 +97,6 @@ void commitWorkingContent(string msg) {
     if(head == NULL){ // empty history so this commit is everything
         newNode->versionId = ++versionCounter;
         head = tail = current = newNode;
-        //isSaved = false;
         return;
     }
     
@@ -115,7 +113,6 @@ void commitWorkingContent(string msg) {
     tail = newNode;
     current = newNode;
     
-    //isSaved = false;
     
 }
 
@@ -128,7 +125,6 @@ void revertToVersion(int id) {
         if (ptr->versionId == id) {
             current = ptr;
             workingContent = ptr->content;
-            //isSaved = false;
             return;
         }
     }
@@ -315,11 +311,9 @@ void runEditor() {
         if (ch == 25) { // Ctrl+Y (Save to Memory)
             string lastCommitContent = (current == NULL) ? "" : current->content;
             if(buffer == lastCommitContent){
-                //isSaved = false;
                 showStatus("NOTHING TO SAVE ");
             }
             else{
-                //isSaved = true;
                 workingContent = buffer;
                 showStatus("SAVED TO MEMORY! ");
             }
@@ -333,7 +327,6 @@ void runEditor() {
             }
 
             workingContent = buffer;
-            //isSaved = true;
 
             //clearScreen();
             
