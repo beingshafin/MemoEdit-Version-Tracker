@@ -8,8 +8,6 @@ A lightweight, powerful console-based text editor with a built-in **Git-like ver
 
 [![Watch the video](https://img.youtube.com/vi/YDCiYAMMitk/maxresdefault.jpg)](https://youtu.be/YDCiYAMMitk)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YDCiYAMMitk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ---
 
 ## 📸 Screenshots
