@@ -365,7 +365,7 @@ int main(){
         clearScreen();
 
         cout << "\n";
-        cout << GREEN << "< Shafin's MEMOxEDIT V.Tracker >\n\n" << RESET;
+        cout << GREEN << "< MEMOxEDIT V.Tracker >\n\n" << RESET;
         cout << CYAN << " [1] " << RESET << "Edit\n";
         cout << CYAN << " [2] " << RESET << "Commit\n";
         cout << CYAN << " [3] " << RESET << "Revert\n";
